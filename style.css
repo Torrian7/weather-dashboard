@@ -1,0 +1,106 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font size and font family */
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the weather dashboard */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling for the search form */
+#searchcities {
+  margin-bottom: 20px;
+}
+
+#city {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Styling for the weather card */
+.card {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+#temp,
+#humid,
+#wind,
+#uvi {
+  margin-top: 5px;
+}
+
+/* Styling for the future weather forecast */
+#future-cast {
+  margin-top: 20px;
+}
+
+.forecast-item {
+  display: inline-block;
+  width: calc(33.3333% - 20px);
+  margin-right: 20px;
+}
+
+.forecast-item:last-child {
+  margin-right: 0;
+}
+
+.forecast-item .date {
+  font-weight: bold;
+}
+
+/* Styling for the search history list */
+#searchhistorylist {
+  margin-top: 20px;
+}
+
+.search-item {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+/* Styling for the clear history button */
+#clear-history {
+  margin-top: 10px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .forecast-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
